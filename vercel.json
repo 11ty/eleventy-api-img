@@ -1,0 +1,15 @@
+{
+	"functions": {
+		"api/img.js": {
+			"includeFiles": ""
+		}
+	},
+	"rewrites": [
+		{ "source": "/", "destination": "/api/img/" },
+		{ "source": "/:url*", "destination": "/api/img/" },
+		{ "source": "/:url/", "destination": "/api/img/" },
+		{ "source": "/:url/:format/", "destination": "/api/img/" },
+		{ "source": "/:url/:format/:dims/", "destination": "/api/img/" }
+	],
+	"trailingSlash": true
+}
